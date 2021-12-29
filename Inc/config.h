@@ -65,7 +65,7 @@
 
 // ###### CONTROL VIA TWO POTENTIOMETERS ######
 // ADC-calibration to cover the full poti-range: connect potis to left sensor board cable (0 to 3.3V) (do NOT use the red 15V wire in the cable!). see <How to calibrate>. turn the potis to minimum position, write value 1 to ADC1_MIN and value 2 to ADC2_MIN. turn to maximum position and repeat it for ADC?_MAX. make, flash and test it.
-//#define CONTROL_ADC                 // use ADC as input. disable CONTROL_SERIAL_USART2!
+#define CONTROL_ADC                 // use ADC as input. disable CONTROL_SERIAL_USART2!   // Enabled by "mmaamari"
 #define ADC1_MIN 0                // min ADC1-value while poti at minimum-position (0 - 4095)
 #define ADC1_MAX 4095               // max ADC1-value while poti at maximum-position (0 - 4095)
 #define ADC2_MIN 0                // min ADC2-value while poti at minimum-position (0 - 4095)
@@ -77,7 +77,7 @@
 
 // ###### MOTOR TEST MODE ######
 // slowly move both wheels forward and backward, ignoring all inputs
-#define CONTROL_MOTOR_TEST
+// #define CONTROL_MOTOR_TEST    // Disabled by  "mmaamari"
 #define CONTROL_MOTOR_TEST_MAX_SPEED 300         // sweep slowly from -MAX_SPEED to MAX_SPEED (0 - 1000)
 
 // ############################### DRIVING BEHAVIOR ###############################
